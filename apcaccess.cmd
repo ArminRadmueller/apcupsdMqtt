@@ -1,55 +1,38 @@
 @echo off
-echo APC      : 001,053,1270
-echo DATE     : 2017-01-04 10:52:18 +0000  
-echo HOSTNAME : hostname.yourdomain.co.uk
-echo VERSION  : 3.14.12 (29 March 2014) redhat
-echo UPSNAME  : netrack
-echo CABLE    : Custom Cable Smart
-echo DRIVER   : APC Smart UPS (any)
+echo APC      : 001,036,0881
+echo DATE     : 2022-11-13 11:40:25 +0100  
+echo HOSTNAME : apcupsdMqtt
+echo VERSION  : 3.14.14 (31 May 2016) debian
+echo UPSNAME  : apcupsdMqtt
+echo CABLE    : USB Cable
+echo DRIVER   : USB UPS Driver
 echo UPSMODE  : Stand Alone
-echo STARTTIME: 2016-09-07 12:05:18 +0100  
-echo MODEL    : SMART-UPS 1400
-echo STATUS   : TRIM ONLINE 
-echo LINEV    : 248.3 Volts
-echo LOADPCT  : 11.4 Percent
+echo STARTTIME: 2022-11-13 11:40:22 +0100  
+echo MODEL    : Back-UPS XS 1400U  
+echo STATUS   : ONLINE 
+echo LINEV    : 232.0 Volts
+echo LOADPCT  : 9.0 Percent
 echo BCHARGE  : 100.0 Percent
-echo TIMELEFT : 115.0 Minutes
+echo TIMELEFT : 70.3 Minutes
 echo MBATTCHG : 5 Percent
 echo MINTIMEL : 3 Minutes
 echo MAXTIME  : 0 Seconds
-echo MAXLINEV : 252.2 Volts
-echo MINLINEV : 247.0 Volts
-echo OUTPUTV  : 219.7 Volts
-echo SENSE    : High
-echo DWAKE    : 0 Seconds
-echo DSHUTD   : 180 Seconds
-echo DLOWBATT : 2 Minutes
-echo LOTRANS  : 196.0 Volts
-echo HITRANS  : 253.0 Volts
-echo RETPCT   : 15.0 Percent
-echo ITEMP    : 31.5 C
-echo ALARMDEL : Low Battery
-echo BATTV    : 27.6 Volts
-echo LINEFREQ : 50.0 Hz
-echo LASTXFER : High line voltage
-echo NUMXFERS : 210
-echo XONBATT  : 2017-01-04 09:29:53 +0000  
+echo SENSE    : Medium
+echo LOTRANS  : 155.0 Volts
+echo HITRANS  : 280.0 Volts
+echo ALARMDEL : 30 Seconds
+echo BATTV    : 27.1 Volts
+echo LASTXFER : Automatic or explicit self test
+echo NUMXFERS : 0
 echo TONBATT  : 0 Seconds
-echo CUMONBATT: 518 Seconds
-echo XOFFBATT : 2017-01-04 09:29:55 +0000  
-echo LASTSTEST: 2016-10-27 23:23:36 +0100  
+echo CUMONBATT: 0 Seconds
+echo XOFFBATT : N/A
 echo SELFTEST : NO
-echo STESTI   : 336
-echo STATFLAG : 0x0500000A
-echo DIPSW    : 0x00
-echo REG1     : 0x00
-echo REG2     : 0x00
-echo REG3     : 0x00
-echo MANDATE  : 07/13/99
-echo SERIALNO : GS9939101425
-echo BATTDATE : 13/11/15
-echo NOMOUTV  : 230 Volts
+echo STATFLAG : 0x05000008
+echo SERIALNO : 4B1948P07984  
+echo BATTDATE : 2019-11-27
+echo NOMINV   : 230 Volts
 echo NOMBATTV : 24.0 Volts
-echo EXTBATTS : 0
-echo FIRMWARE : 70.11.I
-echo END APC  : 2017-01-04 10:52:41 +000
+echo NOMPOWER : 700 Watts
+echo FIRMWARE : 926.T2 .I USB FW:T2
+echo END APC  : 2022-11-13 11:40:42 +0100

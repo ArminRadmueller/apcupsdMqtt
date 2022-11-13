@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  apcupsdMqtt:
+    container_name: apcupsdMqtt
+    image: arminradmueller/apcupsdmqtt:test
+    environment:
+      TZ: 'Europe/Rome'
+    hostname: apcupsdMqtt
+    domainname: amenet.intranet
+    networks:
+      smarthome:
+        ipv4_address: 172.16.5.105
+    extra_hosts:
+       - 'mqttbroker.amenet.intranet: 172.16.5.1'
+    privileged: true
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyUSB0"
+    volumes:
+      - ./apcupsd.conf:/etc/apcupsd/apcupsd.conf:ro
+      - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:rw
+      - /dev/ttyS0:/dev/ttyS0:rw
+    restart: always
+
+networks:
+  smarthome:
+    external: true
