@@ -1,0 +1,12 @@
+{
+    "logLevel": "debug",
+    
+    "devicename": "Werkstatt",
+    "pollInterval": 5000,
+
+    "mqttBroker": {
+        "url": "mqtt://172.16.1.35",
+        "topic": "apcuspd"
+    }
+
+}

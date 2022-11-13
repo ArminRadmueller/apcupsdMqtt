@@ -1,0 +1,47 @@
+{
+  "name": "apcusbdmqtt",
+  "version": "0.0.1",
+  "description": "apcusbd MQTT pusher to integrate an APC UPS in my SmartHome",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArminRadmueller/apcusbdMqtt.git"
+  },
+  "keywords": [
+    "smarthome",
+    "mqtt",
+    "loxone",
+    "apc",
+    "ups"
+  ],
+  "author": "Armin Radmüller",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ArminRadmueller/apcusbdMqtt/issues"
+  },
+  "homepage": "https://github.com/ArminRadmueller/apcusbdMqtt#readme",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "start:dev": "nodemon ./src/index.ts ../config.json",
+    "start": "npm run build && node build/index.js ../config.json"
+  },
+  "dependencies": {
+    "@types/events": "^3.0.0",
+    "@types/node": "^18.11.9",
+    "events": "^3.3.0",
+    "mqtt": "^4.3.7",
+    "typescript": "^4.8.4",
+    "yalm": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/events": "^3.0.0",
+    "@types/node": "^18.11.9",
+    "events": "^3.3.0",
+    "mqtt": "^4.3.7",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4",
+    "yalm": "^4.1.0"
+  }
+}
